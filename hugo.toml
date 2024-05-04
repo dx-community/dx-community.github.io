@@ -1,4 +1,4 @@
 baseURL = 'https://www.dx-community.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'DX Community'
 theme = 'ananke'
