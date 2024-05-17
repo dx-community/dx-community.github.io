@@ -1,0 +1,56 @@
+<!-- Modify the HTML to include the answers (hidden by default) -->
+
+<section class="my-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h3 class="text-3xl font-bold mb-4 text-center">{{ T "faq" }}</h3>
+    <p class="text-lg text-center mb-8">
+      {{ T "faq-text" }}
+    </p>
+
+    <div class="space-y-4">
+      <div class="dropdown flex-col">
+        <div class="w-full flex flex-row items-center justify-between">
+          <span class="text-lg">{{ T "faq-question-1" }}</span>
+          <button class="text-2xl font-bold">+</button>
+        </div>
+        <div class="hidden answer mt-6">
+          <p>
+            {{ T "faq-answer-1" }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('div.dropdown').forEach((dropdown) => {
+    dropdown.addEventListener('click', () => {
+      const answer = dropdown.querySelector('.answer');
+
+      if (answer && answer.classList.contains('answer')) {
+        answer.classList.toggle('hidden');
+        answer.classList.toggle('open'); // Toggle the open class for animation
+        const button = dropdown.querySelector('button');
+
+        if (button) {
+          button.textContent = button.textContent === '+' ? '−' : '+';
+        }
+      }
+    });
+  });
+</script>
+
+<style>
+  .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition:
+      max-height 0.3s ease-out,
+      padding 0.3s ease-out;
+  }
+
+  .answer.open {
+    max-height: 200px; /* Adjust according to the content size */
+  }
+</style>

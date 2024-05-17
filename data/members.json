@@ -1,0 +1,15 @@
+[
+  {
+    "slug": "leo-d",
+    "name": "Léo DUMON",
+    "role": "Platform Engineer - Developer Experience",
+    "company": {
+      "name": "Shine",
+      "logo": "shine.svg",
+      "websiteUrl": "https://www.shine.fr/",
+      "displayedHomepage": true
+    },
+    "githubLink": "https://github.com/Myastr0",
+    "linkedinLink": "https://www.linkedin.com/in/l%C3%A9o-dumon-67903b107/"
+  }
+]

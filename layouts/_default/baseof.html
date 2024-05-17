@@ -1,0 +1,22 @@
+<!doctype html>
+<html
+  lang="{{ or site.Language.LanguageCode site.Language.Lang }}"
+  dir="{{ or site.Language.LanguageDirection `ltr` }}"
+>
+  <head>
+    {{ $seo := T "seo-site-meta-description" }}
+    <meta name="description" content="{{ $seo }}" />
+    {{ partial "head.html" . }}
+    {{ partial "scripts/dark-mode.html" . }}
+  </head>
+  <body>
+    <header>
+      {{ partial "header.html" . }}
+    </header>
+
+    <main class="container mx-auto px-4 xl:px-28">
+      {{ block "main" . }}{{ end }}
+      {{ partial "footer.html" . }}
+    </main>
+  </body>
+</html>

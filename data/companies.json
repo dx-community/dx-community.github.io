@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "shine",
+    "name": "Shine",
+    "logo": "shine.svg",
+    "websiteUrl": "https://www.shine.fr/",
+    "displayedHomepage": true
+  },
+  {
+    "slug": "payfit",
+    "name": "PayFit",
+    "logo": "payfit.svg",
+    "websiteUrl": "https://payfit.com/",
+    "displayedHomepage": true
+  },
+  {
+    "slug": "zenchef",
+    "name": "Zenchef",
+    "logo": "zenchef.svg",
+    "websiteUrl": "https://www.zenchef.com/",
+    "displayedHomepage": true
+  },
+  {
+    "slug": "axolo",
+    "name": "Axolo",
+    "logo": "axolo.svg",
+    "websiteUrl": "https://www.axolo.co/",
+    "displayedHomepage": true
+  },
+  {
+    "slug": "mano-mano",
+    "name": "ManoMano",
+    "logo": "manomano.svg",
+    "websiteUrl": "https://www.manomano.fr/",
+    "displayedHomepage": true
+  },
+  {
+    "slug": "qovery",
+    "name": "Qovery",
+    "logo": "qovery.svg",
+    "websiteUrl": "https://www.qovery.com/",
+    "displayedHomepage": true
+  },
+  {
+    "slug": "see-view-lab",
+    "name": "See View Lab",
+    "logo": "see-view-lab.svg",
+    "websiteUrl": "https://seaviewlab.com/"
+  }
+]

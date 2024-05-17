@@ -1,0 +1,101 @@
+@import 'fonts.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- */
+
+@layer base {
+  html {
+    font-size: 100%;
+  }
+
+  body {
+    @apply antialiased;
+    @apply leading-normal;
+    @apply tracking-normal;
+    @apply font-body;
+    @apply font-normal;
+    @apply bg-background;
+    @apply dark:text-text-dark;
+    @apply dark:bg-background-dark;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-5xl;
+  }
+
+  h2 {
+    @apply text-4xl;
+  }
+
+  h3 {
+    @apply text-3xl;
+  }
+
+  h4 {
+    @apply text-2xl;
+  }
+
+  h5 {
+    @apply text-xl;
+  }
+
+  small {
+    @apply text-sm;
+  }
+
+  section {
+    @apply my-16;
+  }
+
+  .button-purple {
+    @apply bg-primary text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-accent transition-colors duration-300;
+  }
+
+  .button-green {
+    @apply bg-secondary text-white font-medium py-2 px-4 rounded hover:bg-secondary-dark transition-colors duration-300;
+  }
+
+  .card {
+    @apply bg-primary bg-opacity-15 rounded-lg p-6;
+  }
+
+  .card-img {
+    @apply w-36 h-36;
+  }
+
+  .dropdown {
+    @apply bg-primary bg-opacity-15 rounded-lg p-4 flex justify-between items-center cursor-pointer;
+  }
+
+  .markdown {
+
+    h1, h2, h3, h4, h5, h6 {
+      @apply my-2;
+    }
+
+    p {
+      @apply my-4;
+    }
+
+    ul {
+      @apply list-disc pl-4 my-4;
+    }
+
+    a {
+      @apply text-primary underline;
+    }
+  }
+}

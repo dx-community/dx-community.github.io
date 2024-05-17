@@ -1,0 +1,51 @@
+{
+  "baseURL": "https://www.dx-community.io/",
+  "languageCode": "en-us",
+  "title": "DX Community",
+  "menus": {
+    "main": [
+      {
+        "name": "Home",
+        "identifier": "home",
+        "pageRef": "/",
+        "weight": 10
+      },
+      {
+        "name": "Posts",
+        "pageRef": "/posts",
+        "weight": 20
+      },
+      {
+        "name": "Tags",
+        "pageRef": "/tags",
+        "weight": 30
+      },
+      {
+        "name": "Legal Notice",
+        "pageRef": "/legal-notice",
+        "weight": 40
+      },
+      {
+        "name": "Join the community",
+        "pageRef": "/join-the-community",
+        "weight": 50
+      }
+    ]
+  },
+  "languages": {
+    "en": {
+      "params": {
+        "disabled": false,
+        "label": "English",
+        "weight": 10
+      }
+    },
+    "fr": {
+      "params": {
+        "disabled": false,
+        "label": "Français",
+        "weight": 20
+      }
+    }
+  }
+}

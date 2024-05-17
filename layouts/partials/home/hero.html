@@ -1,0 +1,40 @@
+{{ $hero_img := resources.Get "images/rocket.svg" }}
+
+
+<section class="md:flex">
+  <!-- Text Column -->
+  <div class="md:w-1/2 md:pr-6">
+    <h3 class="text-center mb-4 md:text-left">
+      {{ (i18n "hero-title") | safeHTML }}
+    </h3>
+    <div class="text-center md:text-left text-lg">
+      <div>
+        {{ T "hero-subtitle" | safeHTML }}
+      </div>
+      <div>
+        {{ T "hero-end" | safeHTML }}
+      </div>
+      <div class="mt-8 flex justify-center">
+        {{ $joinCommunity := absLangURL "/join-the-community" }}
+        <a
+          target="_blank"
+          href="{{ .Site.Params.slackLink }}"
+          rel="noopener noreferrer"
+          class="button-green text-base font-medium hover:font-extrabold ml-4 px-3 py-2"
+        >
+          {{ T "join-the-slack" }}
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Image Column -->
+  <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+    <img
+      width="65%"
+      src="{{ $hero_img.RelPermalink }}"
+      alt="Rocket"
+      class="mx-auto md:mx-0 md:float-right md:ml-4 md:mb-4"
+    />
+  </div>
+  <!-- class="text-accent" -->
+</section>

@@ -1,0 +1,25 @@
+<div id="dark-mode-toggle" class="w-8 w-8 cursor-pointer">
+  <div class="dark:hidden block">
+    {{ partial "images/sun.svg" }}
+  </div>
+  <div class="hidden dark:block">
+    {{ partial "images/moon.svg" }}
+  </div>
+</div>
+
+<script>
+  const toggleDarkMode = () => {
+    const htmlElement = document.documentElement;
+    if (htmlElement.classList.contains('dark')) {
+      htmlElement.classList.remove('dark');
+      localStorage.setItem('darkMode', 'disabled');
+    } else {
+      htmlElement.classList.add('dark');
+      localStorage.setItem('darkMode', 'enabled');
+    }
+  };
+
+  document
+    .getElementById('dark-mode-toggle')
+    .addEventListener('click', toggleDarkMode);
+</script>

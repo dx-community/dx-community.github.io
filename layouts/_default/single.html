@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <section>
+    <h3>{{ .Title }}</h3>
+    {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+    {{ $dateHuman := .Date | time.Format ":date_long" }}
+    <div class="mb-4">
+      <time datetime="{{ $dateMachine }}">
+        <i>{{ $dateHuman }}</i>
+      </time>
+    </div>
+
+    <div class="my-8 border-t border-gray-500 border-opacity-10"></div>
+    <div class="markdown">
+      {{ .Content }}
+    </div>
+  </section>
+{{ end }}
