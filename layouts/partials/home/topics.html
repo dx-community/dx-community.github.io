@@ -1,6 +1,7 @@
 <!-- layouts/partials/why-realtime-colors.html -->
 
-<section class="my-12">
+<section>
+  <!-- class="text-secondary" -->
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
     <h2 class="text-3xl font-bold mb-8">{{ T "main-topics" }}</h2>
 
@@ -13,7 +14,7 @@
         </div>
         <h3 class="text-xl font-bold mb-2">{{ T "efficiency" }}</h3>
         <p>
-          {{ T "efficiency-text" }}
+          {{ T "efficiency-text" | safeHTML }}
         </p>
       </div>
 
@@ -27,7 +28,7 @@
         </div>
         <h3 class="text-xl font-bold mb-2">{{ T "quality" }}</h3>
         <p>
-          {{ T "quality-text" }}
+          {{ T "quality-text" | safeHTML }}
         </p>
       </div>
 
@@ -40,7 +41,7 @@
           </div>
           <h3 class="text-xl font-bold mb-2">{{ T "measure-ability" }}</h3>
           <p>
-            {{ T "measure-ability-text" }}
+            {{ T "measure-ability-text" | safeHTML }}
           </p>
         </div>
       </div>

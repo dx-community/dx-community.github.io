@@ -1,0 +1,22 @@
+<!-- layouts/partials/mission-of-dx-community.html -->
+
+<section>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold mb-8 text-center">
+      {{ T "mission-of-the-dx-community-title" | safeHTML }}
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div class="my-4 lg:mb-0 flex justify-center">
+        <div class="w-1/2 md:w-3/4">
+          {{ partial "images/engineering-team.svg" . }}
+        </div>
+      </div>
+      <div>
+        <p class="text-lg mb-8 text-center lg:text-left">
+          {{ T "mission-of-the-dx-community-text" | safeHTML }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

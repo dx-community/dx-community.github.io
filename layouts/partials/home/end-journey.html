@@ -8,9 +8,14 @@
       target="_blank"
       href="{{ .Site.Params.slackLink }}"
       rel="noopener noreferrer"
-      class="button-green text-base font-medium hover:font-extrabold ml-4 px-3 py-2"
+      class="button-green flex items-center justify-between text-base font-medium hover:font-extrabold ml-4 px-3 py-2"
     >
-      {{ T "join-the-slack" }}
+      <div class="fill-white h-4 w-4 mr-2">
+        {{ partial "images/slack.svg" . }}
+      </div>
+      <div>
+        {{ T "join-the-slack" }}
+      </div>
     </a>
   </div>
 </section>

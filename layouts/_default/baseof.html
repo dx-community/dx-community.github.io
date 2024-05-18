@@ -10,11 +10,11 @@
     {{ partial "scripts/dark-mode.html" . }}
   </head>
   <body>
-    <header>
+    <div class="w-full fixed top-0 z-50">
       {{ partial "header.html" . }}
-    </header>
+    </div>
 
-    <main class="container mx-auto px-4 xl:px-28">
+    <main class="container pt-14 mx-auto px-4 xl:px-28">
       {{ block "main" . }}{{ end }}
       {{ partial "footer.html" . }}
     </main>
