@@ -12,13 +12,13 @@
       <div>
         {{ T "hero-end" | safeHTML }}
       </div>
-      <div class="mt-8 flex justify-center">
+      <div class="mt-8 flex justify-center md:justify-start">
         {{ $joinCommunity := absLangURL "/join-the-community" }}
         <a
           target="_blank"
           href="{{ .Site.Params.slackLink }}"
           rel="noopener noreferrer"
-          class="button-green flex items-center justify-between text-base font-medium hover:font-extrabold ml-4 px-3 py-2"
+          class="button-green flex items-center justify-between text-base font-medium hover:font-extrabold px-3 py-2"
         >
           <div class="fill-white h-4 w-4 mr-2">
             {{ partial "images/slack.svg" . }}
