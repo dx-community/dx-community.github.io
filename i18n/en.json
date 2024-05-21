@@ -29,7 +29,7 @@
   "quality": "Quality",
   "quality-text": "<span class=\"font-bold\">Code quality</span>, <b>testing</b> and <b>technical depth</b> are main quality point of a great Developer Experience.",
   "efficiency": "Efficiency",
-  "efficiency-text": "Efficiency is key to a great Developer Experience. Discover how adopting best practices like <b>CI/CD</b> and <b>GitOps</b> maximize efficiency",
+  "efficiency-text": "Efficiency is key to a great Developer Experience. Discover how adopting best practices like <b>CI/CD</b> and <b>GitOps</b> maximize efficiency.",
   "measure-ability": "Measure-ability",
   "measure-ability-text": "Have you ever heard about <b>DORA</b> or <b>SPACE metrics</b> ? Discover the best practices and tools to measure the DX.",
   "faq": "FAQ",
